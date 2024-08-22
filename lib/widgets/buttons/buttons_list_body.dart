@@ -1,8 +1,9 @@
+import 'package:calculator/widgets/buttons/buttons_list.dart';
 import 'package:flutter/material.dart';
 
 
-class ButtonsList extends StatelessWidget {
-  const ButtonsList({super.key});
+class ButtonsListBody extends StatelessWidget {
+  const ButtonsListBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +15,9 @@ class ButtonsList extends StatelessWidget {
           topRight: Radius.circular(32),
         ),
       ),
+      child: const ButtonsList(),
     );
   }
 }
+
+

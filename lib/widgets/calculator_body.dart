@@ -1,5 +1,5 @@
-import 'package:calculator/widgets/buttons_list.dart';
-import 'package:calculator/widgets/result.dart';
+import 'package:calculator/widgets/buttons/buttons_list_body.dart';
+import 'package:calculator/widgets/result/result.dart';
 import 'package:flutter/material.dart';
 
 
@@ -20,7 +20,7 @@ class CalculatorBody extends StatelessWidget {
         ),
         Expanded(
           flex: 60,
-          child: ButtonsList(),
+          child: ButtonsListBody(),
         ),
       ],
     );
