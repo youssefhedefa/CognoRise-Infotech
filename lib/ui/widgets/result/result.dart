@@ -1,6 +1,6 @@
 import 'package:calculator/helpers/color_helper.dart';
-import 'package:calculator/widgets/result/operation.dart';
-import 'package:calculator/widgets/result/operation_result.dart';
+import 'package:calculator/ui/widgets/result/operation.dart';
+import 'package:calculator/ui/widgets/result/operation_result.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 

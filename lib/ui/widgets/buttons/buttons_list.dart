@@ -1,5 +1,5 @@
 import 'package:calculator/helpers/color_helper.dart';
-import 'package:calculator/widgets/buttons/custom_button.dart';
+import 'package:calculator/ui/widgets/buttons/custom_button.dart';
 import 'package:flutter/material.dart';
 
 
@@ -17,6 +17,7 @@ class ButtonsList extends StatelessWidget {
       ),
       physics: const NeverScrollableScrollPhysics(),
       padding: const EdgeInsets.all(24),
+      itemCount: 20,
       itemBuilder: (context, index) {
         return buildButton(index: index);
       },

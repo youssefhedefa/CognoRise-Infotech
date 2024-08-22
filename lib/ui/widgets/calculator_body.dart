@@ -1,5 +1,5 @@
-import 'package:calculator/widgets/buttons/buttons_list_body.dart';
-import 'package:calculator/widgets/result/result.dart';
+import 'package:calculator/ui/widgets/buttons/buttons_list_body.dart';
+import 'package:calculator/ui/widgets/result/result.dart';
 import 'package:flutter/material.dart';
 
 
