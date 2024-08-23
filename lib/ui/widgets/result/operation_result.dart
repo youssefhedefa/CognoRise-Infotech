@@ -5,14 +5,12 @@ import 'package:provider/provider.dart';
 
 
 class OperationResult extends StatelessWidget {
-  const OperationResult({super.key, required this.result});
-
-  final String result;
+  const OperationResult({super.key,});
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      context.watch<CreateOperation>().result.toStringAsFixed(4),
+      context.watch<CreateOperation>().result.toString(),
       style: AppTextStyleHelper.font56DarkThemeWhiteSemiBold,
     );
   }

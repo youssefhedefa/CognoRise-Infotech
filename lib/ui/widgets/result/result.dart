@@ -2,7 +2,6 @@ import 'package:calculator/helpers/color_helper.dart';
 import 'package:calculator/ui/widgets/result/operation.dart';
 import 'package:calculator/ui/widgets/result/operation_result.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 
 class Result extends StatelessWidget {
@@ -31,9 +30,7 @@ class Result extends StatelessWidget {
             isResultShown: isResultShown,
             isRow: !(firstOperand.toString().length > 8 || secondOperand.toString().length > 8),
           ),
-          isResultShown ? OperationResult(
-            result: NumberFormat('#,###').format(39126),
-          ) : const SizedBox(),
+          isResultShown ? const OperationResult() : const SizedBox(),
         ],
       ),
     );

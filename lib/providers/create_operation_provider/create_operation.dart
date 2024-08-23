@@ -33,11 +33,11 @@ class CreateOperation extends ChangeNotifier {
 
   calculate(){
     if(firstNumber.isNotEmpty && secondNumber.isNotEmpty && operand.isNotEmpty){
-      double firstNum = double.parse(firstNumber);
-      double secondNum = double.parse(secondNumber);
+      num firstNum = num.parse(firstNumber);
+      num secondNum = num.parse(secondNumber);
       switch(operand){
         case '+':
-          result = firstNum + secondNum;
+         result = firstNum + secondNum;
           break;
         case '-':
           result = firstNum - secondNum;
