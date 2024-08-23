@@ -31,7 +31,7 @@ class Operation extends StatelessWidget {
     return  [
       Text(
         firstOperand,
-        style: isResultShown ? AppTextStyleHelper.font36DarkThemeWhiteSemiBold : AppTextStyleHelper.font52DarkThemeWhiteSemiBold,
+        style: isResultShown ? AppTextStyleHelper.font36DarkThemeWhiteRegular : AppTextStyleHelper.font52DarkThemeWhiteSemiBold,
       ),
       const SizedBox(width: 12),
       Padding(
@@ -44,7 +44,7 @@ class Operation extends StatelessWidget {
       const SizedBox(width: 12),
       Text(
         secondOperand,
-        style: isResultShown ? AppTextStyleHelper.font36DarkThemeWhiteSemiBold : AppTextStyleHelper.font52DarkThemeWhiteSemiBold,
+        style: isResultShown ? AppTextStyleHelper.font36DarkThemeWhiteRegular : AppTextStyleHelper.font52DarkThemeWhiteSemiBold,
       ),
     ];
   }

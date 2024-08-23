@@ -8,9 +8,9 @@ abstract class AppTextStyleHelper{
     color: AppDarkColorsHelper.whiteColor,
   );
 
-  static const TextStyle font36DarkThemeWhiteSemiBold = TextStyle(
+  static const TextStyle font36DarkThemeWhiteRegular = TextStyle(
     fontSize: 36,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w400,
     color: AppDarkColorsHelper.whiteColor,
   );
 

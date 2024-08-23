@@ -6,11 +6,13 @@ import 'package:intl/intl.dart';
 
 
 class Result extends StatelessWidget {
-  const Result({super.key, required this.firstOperand, required this.secondOperand, required this.operator});
+  const Result({super.key, required this.firstOperand, required this.secondOperand, required this.operator, required this.isResultShown, required this.hasSecondOperand});
 
-  final double firstOperand;
-  final double secondOperand;
+  final String firstOperand;
+  final String secondOperand;
   final String operator;
+  final bool isResultShown;
+  final bool hasSecondOperand;
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +25,15 @@ class Result extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Operation(
-            firstOperand: NumberFormat('#,###').format(firstOperand),
+            firstOperand: firstOperand,
             operator: operator,
-            secondOperand: NumberFormat('#,###').format(secondOperand),
-            isResultShown: true,
+            secondOperand: hasSecondOperand ? secondOperand : '',
+            isResultShown: isResultShown,
             isRow: !(firstOperand.toString().length > 8 || secondOperand.toString().length > 8),
           ),
-          OperationResult(
+          isResultShown ? OperationResult(
             result: NumberFormat('#,###').format(39126),
-          ),
+          ) : const SizedBox(),
         ],
       ),
     );
